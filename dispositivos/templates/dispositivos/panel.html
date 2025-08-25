@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Panel de Dispositivos</title>
+</head>
+<body>
+    <h1>Panel de Control</h1>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Consumo</th>
+            <th>Límite</th>
+        </tr>
+        {% for dispositivo in dispositivos %}
+        <tr>
+            <td>{{ dispositivo.nombre }}</td>
+            <td>{{ dispositivo.consumo }}W</td>
+            <td>{{ dispositivo.limite }}W</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
